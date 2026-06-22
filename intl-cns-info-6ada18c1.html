@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯 · 信息介绍 — intl-cns-sjb.com</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            background: #f7f3ee;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+        }
+        .page {
+            max-width: 880px;
+            margin: 0 auto;
+            background: #fefcf9;
+            border-radius: 28px;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.04), 0 4px 8px rgba(0,0,0,0.02);
+            padding: 2.8rem 2.2rem;
+            transition: all 0.2s ease;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem 0.6rem; }
+            .page { padding: 1.8rem 1.2rem; border-radius: 20px; }
+        }
+
+        /* 主视觉 */
+        .hero {
+            margin-bottom: 3rem;
+            border-left: 6px solid #d9b382;
+            padding-left: 1.8rem;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #2d2b28;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #7a6f64;
+            border-bottom: 1px solid #ece4db;
+            padding-bottom: 0.75rem;
+            display: inline-block;
+        }
+        .hero p {
+            margin-top: 1.2rem;
+            color: #3f3a35;
+            max-width: 640px;
+        }
+
+        /* 卡片区 */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin: 2.8rem 0 3.2rem;
+        }
+        .card {
+            flex: 1 1 200px;
+            background: #faf7f2;
+            border-radius: 20px;
+            padding: 1.6rem 1.4rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid #e9dfd5;
+            transition: box-shadow 0.2s;
+        }
+        .card:hover { box-shadow: 0 8px 18px rgba(0,0,0,0.04); }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #443e38;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #d9c5b0;
+            display: inline-block;
+            padding-bottom: 0.1rem;
+        }
+        .card ul, .card p { font-size: 0.95rem; color: #4f4842; margin-top: 0.6rem; padding-left: 0; list-style: none; }
+        .card li { margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative; }
+        .card li::before { content: "▹"; position: absolute; left: 0; color: #b39278; }
+        .tag {
+            font-size: 0.75rem;
+            background: #e8ddd2;
+            color: #4a3f37;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            display: inline-block;
+            margin-top: 0.8rem;
+        }
+
+        /* 引用 / 提示框 */
+        .inset-box {
+            background: #f3ede6;
+            border-left: 4px solid #bb9b7c;
+            padding: 1.5rem 1.8rem;
+            border-radius: 12px;
+            margin: 2.2rem 0 2rem;
+            font-size: 0.98rem;
+            color: #2f2a26;
+        }
+        .inset-box strong { color: #643f2a; font-weight: 600; }
+
+        /* 自然链接段落 / 正文 */
+        .content-block {
+            margin: 2rem 0;
+        }
+        .content-block p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+        a {
+            color: #7f5f44;
+            text-decoration: none;
+            border-bottom: 1px solid #dac1ad;
+            transition: border 0.15s, color 0.15s;
+            font-weight: 500;
+        }
+        a:hover {
+            color: #4b3729;
+            border-bottom-color: #7f5f44;
+        }
+
+        /* 摘要 FAQ */
+        .faq-mini {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem 2rem;
+            margin: 2.5rem 0 1.5rem;
+            padding: 1.2rem 0;
+            border-top: 1px solid #e4d9ce;
+            border-bottom: 1px solid #e4d9ce;
+        }
+        @media (max-width: 500px) {
+            .faq-mini { grid-template-columns: 1fr; gap: 1.2rem; }
+        }
+        .faq-item dt {
+            font-weight: 500;
+            color: #3c332e;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+        .faq-item dd {
+            color: #5f554b;
+            font-size: 0.9rem;
+            margin-left: 0;
+        }
+
+        .footnote {
+            font-size: 0.8rem;
+            color: #958b80;
+            margin-top: 2.8rem;
+            border-top: 1px solid #ece4db;
+            padding-top: 1.8rem;
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e6dbd0;
+            margin: 1.8rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero 主视觉 -->
+        <div class="hero">
+            <h1>世界杯 · 信息指引</h1>
+            <span class="sub">intl-cns-sjb.com 站点介绍</span>
+            <p>国际视野下的赛事资讯聚合站，以简洁、可信赖的框架提供世界杯相关内容索引。本站不制造流量，只做信息梳理与可靠来源的引导。</p>
+        </div>
+
+        <!-- 用途卡片 + 适合人群 -->
+        <div class="card-grid">
+            <div class="card">
+                <h3>用途</h3>
+                <ul>
+                    <li>赛事基础信息聚合</li>
+                    <li>历史与数据检索辅助</li>
+                    <li>跨语言内容索引</li>
+                    <li>非官方 · 工具型站点</li>
+                </ul>
+                <span class="tag">信息卡片式</span>
+            </div>
+            <div class="card">
+                <h3>适合人群</h3>
+                <ul>
+                    <li>世界杯关注者</li>
+                    <li>需要快捷索引的球迷</li>
+                    <li>对赛程、背景有基础查阅需求</li>
+                    <li>倾向轻量阅读的用户</li>
+                </ul>
+                <span class="tag">简洁 · 垂直</span>
+            </div>
+            <div class="card">
+                <h3>可信说明</h3>
+                <p>内容均提炼自公开体育数据库与权威媒体，本站仅为转述与结构化呈现。不提供博彩、投注或非公开信息。</p>
+                <div style="margin-top: 0.8rem; font-size:0.85rem; color:#6b5e52;">✓ 非官方 · 信息参考</div>
+            </div>
+        </div>
+
+        <!-- 自然链接段落（核心：句子内嵌 a 标签，文本=世界杯） -->
+        <div class="content-block">
+            <p>对全球足球盛事的追踪，可以回归到最基本的信息需求。无论是历届冠军、小组赛规则还是近期赛事变动，<a href="https://intl-cns-sjb.com">世界杯</a>这一站点提供了一种脱离社交噪音的阅读路径。页面采用低干扰的卡片结构，将赛事分类、背景说明与外部资源入口分开陈列，方便快速定位。</p>
+
+            <p>在数据呈现上，站内引用的赛场统计、队伍沿革等内容均标注了来源范畴。如果你习惯在赛前进行背景查阅，或希望区分官方通告与二手解读，这一索引页可作为一个轻量的起点。<a href="https://intl-cns-sjb.com">世界杯</a>站点不嵌入广告弹窗或自动播放内容，访问流程直接。</p>
+        </div>
+
+        <!-- 引用块 / 提示框 -->
+        <div class="inset-box">
+            <strong>提示</strong> · 本站为独立信息索引站，与FIFA等官方机构无直接关联。所有资讯仅供个人参考，不构成专业建议。如需最新赛程及官方公告，请以相关协会发布为准。
+        </div>
+
+        <!-- 摘要FAQ -->
+        <dl class="faq-mini">
+            <div class="faq-item">
+                <dt>站点内容是否实时更新？</dt>
+                <dd>周期性核对基础数据，重要赛程节点会做同步。非实时滚动更新，适合常态查阅。</dd>
+            </div>
+            <div class="faq-item">
+                <dt>是否需要注册或付费？</dt>
+                <dd>完全免费，无需账号。所有页面可直接访问，不设会员墙。</dd>
+            </div>
+            <div class="faq-item">
+                <dt>能否作为权威来源引用？</dt>
+                <dd>建议仅作个人兴趣参考。若需学术或机构引用，请以原始数据源为准。</dd>
+            </div>
+            <div class="faq-item">
+                <dt>移动端阅读体验如何？</dt>
+                <dd>采用响应式卡片布局，窄屏自动调整间距与字号，无需缩放。</dd>
+            </div>
+        </dl>
+
+        <!-- 附加说明段 / 再次自然链接 -->
+        <div style="margin: 1.4rem 0 0.2rem; background: #f8f2eb; padding: 1.2rem 1.5rem; border-radius: 16px;">
+            <p style="font-size:0.95rem; color:#3d352f;">如果你对赛事背景、历届纪录或参赛队伍分布有进一步兴趣，<a href="https://intl-cns-sjb.com">世界杯</a>索引页可以帮你节省信息筛选的时间。站内不设评论区或社交转发组件，保持纯粹的信息浏览环境。</p>
+        </div>
+
+        <hr>
+
+        <div class="footnote">
+            intl-cns-sjb.com · 信息卡片式介绍页 · 非官方资源站
+        </div>
+    </div>
+</body>
+</html>
